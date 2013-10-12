@@ -10,3 +10,5 @@ Available Classes
 This class installs that mirror and runs apt-get update. Dramaticlly reduced my vagrant up time.  
 
 **solka::javadev** - Installs various java build systems (mvn,ant,gradle) and sets jdk7 as the default java(c).  
+
+**solka::bootstrap** - Installs curl and vim. Why ubuntu doesn't ship with these is beyond me.  
