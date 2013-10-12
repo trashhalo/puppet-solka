@@ -1,4 +1,10 @@
 class solka::javadev{
+	stage { 'bootstrapFirst': 
+		before => Stage['main'],
+	}
+	class{'solka::bootstrap':
+		stage=>bootstrapFirst
+	}
 	package{'maven':
 		ensure=>'present'
 	}
